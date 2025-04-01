@@ -21,23 +21,17 @@ def project_tracking(file1, file2):
 
 
     # Removes unneccsary rows (totals and unmerged names) 
-    # DOES NOT WORK
-    merged_data.drop(columns=['total_x', 'total_y'], inplace=True)
-    merged_data = merged_data[[col for col in merged_data.columns if '_' in col]]
-
+    columns_to_remove = project_names + statuses + ['total_x', 'total_y'] 
+    merged_data.drop(columns = columns_to_remove, inplace=True)
+    
     # Restores the project_id indexing
     merged_data.reset_index(inplace=True)
-
+  
 
 
     merged_data.to_csv("output.txt", index = False, sep = ';', header = True)
 
 
-    # # init all values to 0, fix later
-    # merged_data["blue_1_red_1"] = 0
-    # merged_data["blue_1_red_2"] = 0
-    # merged_data["blue_2_red_1"] = 0
-    # merged_data["blue_2_red_2"] = 0
 
     # # Update the output columns based on the conditions
     # merged_data.loc[merged_data['blue_1'] > 0, 'blue_1_red_1'] = merged_data['red_1']
