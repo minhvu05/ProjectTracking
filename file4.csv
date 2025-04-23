@@ -1,4 +1,4 @@
-project_id;new_construction;rehab;total
-100;2000;1000;3000
-200;1500;3500;5000
-300;4000;1000;5000
+project_id;child_care;comm_center;sports_center;clinic;total
+100;3000;3000;0;0;6000
+200;0;5000;4000;1000;10000 
+300;2000;2000;5000;1000;10000

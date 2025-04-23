@@ -1,4 +1,4 @@
-project_id;blue_1_red_1;blue_1_red_2;blue_2_red_1;blue_2_red_2
-100;0;0;0;0
-200;0;0;0;0
-300;0;0;0;0
+project_id;child_care_new_construction;child_care_rehab;comm_center_new_construction;comm_center_rehab;sports_center_new_construction;sports_center_rehab;clinic_new_construction;clinic_rehab
+100;1500;1500;1500;1500;0;0;0;0
+200;0;0;2500;2500;2000;2000;500;500
+300;1000;1000;1000;1000;2500;2500;500;500
